@@ -20,23 +20,29 @@ export default class Header extends React.PureComponent {
                         </div>
                         <ul className="spark-menu__list spark-header__list spark-header__list--overflow">
                             <li className="spark-menu__list-item" role="menuitem">
-                                <a
-                                    href="https://www.sabrepong.leaguerepublic.com"
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className="spark-menu__list-link">Ladder</a>
-                            </li>
-                            <li className="spark-menu__list-item" role="menuitem">
-                                <a
-                                    href="https://pl.wikipedia.org/wiki/Tenis_sto%C5%82owy"
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className="spark-menu__list-link">Rules</a>
+                                <Link
+                                    to='/rules'
+                                    className='spark-menu__list-link'>Rules</Link>
                             </li>
                             <li className="spark-menu__list-item" role="menuitem">
                                 <Link
-                                     to='/contact'
-                                     className='spark-menu__list-link'>Contact</Link>
+                                    to='/contact'
+                                    className='spark-menu__list-link'>Contact</Link>
+                            </li>
+                            <li className="spark-menu__list-item" role="menuitem">
+                                <Link
+                                    to='/faq'
+                                    className='spark-menu__list-link'>FAQ</Link>
+                            </li>
+                            <li className="spark-menu__list-item" role="menuitem">
+                                <a
+                                    href="#"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className="spark-menu__list-link">
+                                    Ladder
+                                    <i className="spark-icon--fill spark-icon-out spark-icon--md ml-1 mb-2"/>
+                                </a>
                             </li>
                         </ul>
                     </div>
